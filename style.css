@@ -27,10 +27,6 @@ body {
     text-align: center;
 }
   
-h1, h2 {
-    font-family: 'Great Vibes', cursive;
-}
-  
 h2 {
     font-size: 3rem;
 }
@@ -47,4 +43,251 @@ a {
 a:hover {
     color: #eda087;
     transition: color .15s ease-in-out;
+}
+
+/* Font styles */
+.greatvibes {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* ==== HEADER STYLES ====*/
+
+.cover {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
+    display: table;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.hero-text {
+    margin: 0 auto;
+    padding: .625rem;
+    color: hsla(0,0%,100%,.9);
+    background: hsla(100,0%,0%,.5);
+}
+.hero-text h1 {
+    font-size: 3.15rem;
+    color: #d2ba87;
+    margin-bottom: 0;
+}
+.tagline {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+}
+  
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+}
+  
+.date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
+}
+  
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+@media (min-width: 768px) {
+
+    .cover {
+      background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+    }
+  
+    .hero-text {
+      padding: 1.25rem;
+      border-radius: 4px;
+      width: 50%;
+    }
+  
+    .hero-text h1 {
+      font-size: 7rem;
+    }
+  
+    .tagline {
+      text-transform: uppercase;
+    }
+  
+}
+
+/* ==== LOCATION STYLES ====*/
+
+.blurb img {
+    height: 7.5rem;
+}
+  
+.blurb h3 {
+    font-weight: 700;
+}
+  
+.blurb div {
+    font-family: 'Mulish', sans-serif;
+}
+
+.blurb::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+}
+
+@media (min-width: 768px) {
+
+    .blurb {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+  
+    .blurb::after {
+      display: none;
+    }
+  
+}
+
+/* ==== PROGRAM STYLES ====*/
+.program {
+    background-color: hsla(100,0%,0%,.6);
+    width: 100vw;
+    text-align: left;
+    color: #d2ba87;
+    font-family: 'Mulish', sans-serif;
+}
+
+.program h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.program p {
+    font-style: italic;
+}
+
+.program ul {
+    letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+
+    .program-wrapper {
+      width: 30vw;
+      margin: 0 auto;
+    }
+  
+}
+
+/* ==== GIFTS STYLES ====*/
+
+.gifts img {
+    height: 7.5rem;
+}
+
+.gifts p:last-child {   
+    margin-bottom: 0;
+}
+
+/* ==== FAQ STYLES ====*/
+
+.faq {
+    background-color: hsla(100,0%,0%,.6);
+    width: 100vw;
+    text-align: center;
+    color: #d2ba87;
+}
+.faq p {
+    text-align: left;
+    font-family: 'Mulish', sans-serif;
+}
+.faq h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+.question-group::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+}
+.question {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.answer {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+    .question-group {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+  
+    .question-group::after {
+      display: none;
+    }
+  
+    .question-group h3 {
+      text-align: left;
+    }
+  
+}
+
+/* ==== FOOTER STYLES ====*/
+.footer-wrapper {
+    width: 100vw;
+    height: 10vh;
+    background-color: #606060;
+    text-align: center;
+    color: white;
+    display: table;
+    font-size: 0.8rem;
+}
+.footer-wrapper p {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+  
+footer small {
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+    footer {
+      min-height: 7vh;
+    }
+  
 }
